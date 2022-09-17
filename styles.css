@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     background: linear-gradient(to bottom right,#BBB,#FFF);
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     width: 50%;
     margin: 8rem auto;
     border-radius: 2rem;
@@ -32,7 +32,9 @@ button:hover{
 }
 input{
     height: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0 0.2rem;
+    border-radius: 0.5rem;
 }
 .x,.y{
     display: flex;
@@ -41,7 +43,10 @@ input{
     flex-direction: column;
 }
 .todo-box{
-    margin: 1rem 2rem;
+    margin: 1rem 0;
     justify-content: space-between;
     width: 30rem;
+}
+input:focus-visible{
+    outline: none;
 }
