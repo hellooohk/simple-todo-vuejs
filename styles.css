@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right,#FF9551,#FF4A4A);
+    font-family: sans-serif;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right,#BBB,#FFF);
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 50%;
+    margin: 8rem auto;
+    border-radius: 2rem;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+}
+button{
+    padding: 0.5rem 1rem;
+   border-radius: 1rem;
+}
+button:hover{
+    cursor: pointer;
+}
+input{
+    height: 2rem;
+    font-size: 1.5rem;
+}
+.x,.y{
+    display: flex;
+}
+.y{
+    flex-direction: column;
+}
+.todo-box{
+    margin: 1rem 2rem;
+    justify-content: space-between;
+    width: 30rem;
+}

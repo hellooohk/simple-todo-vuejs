@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Todos List</title>
+  </head>
+  <body>
+    <div id="app">
+        <h2>Todo Application build using Vue.js</h2>
+      <ul>
+        <div class="x todo-box" v-for="todo in todos" :key="todo.id">
+          <li>{{todo.content}}</li>
+          <button type="button" @click="handleDelete(todo.id)">Delete</button>
+        </div>
+      </ul>
+      <div class="add-box x todo-box">
+        <input type="text" :value="inputField" @input="handleChange" placeholder="Type something..." />
+        <button @click="add" type="button">Add</button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
